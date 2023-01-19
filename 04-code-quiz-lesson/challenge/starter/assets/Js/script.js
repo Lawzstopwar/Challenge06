@@ -56,6 +56,7 @@ let currentQuestion = 0;
 function goToNext() {
     currentQuestion++;
     changeQuestion()
+    
 }
 
 function changeQuestion () {
