@@ -78,8 +78,17 @@ document.querySelector("#start").addEventListener("click", function () {
     document.querySelector("#start-screen").classList.add("hide");
 
     changeQuestion()
-
 })
+
+document.querySelector(".quit").addEventListener("click", function(){
+    console.log("Exit Button pressed")
+})
+
+
+    document.querySelector(".refresh").addEventListener("click", function(){
+        console.log("Refresh Button pressed")
+    })
+
 
 
 
