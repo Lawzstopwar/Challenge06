@@ -1,4 +1,4 @@
-let choiceE1 = document.querySelector("#choice")
+let choiceE1 = document.querySelector("#choices")
 let questions = [
     {
         question: "What type of variable is visible only within a function where it is defined?",
@@ -11,7 +11,7 @@ let questions = [
     },
     {
         question: " Which function of Array object is able to call a function for each element in the array?",
-        answer: [
+        answers: [
             ("filter()"),
             ("forEach()"),
             ("every()"),
@@ -20,7 +20,7 @@ let questions = [
     },
     { 
         question: " Which function of Boolean is able object returns a string containing the source of the Boolean object?", 
-        answer: [
+        answers: [
             ("toString()"), 
             ("toSource"), 
             ("valueOf"), 
@@ -29,7 +29,7 @@ let questions = [
     },
     { 
         question: " Can you pass a anonymous function as an argument to another function?", 
-        answer: [
+        answers: [
             ("true"), 
             ("false"), 
             ("nor true or false"),
@@ -38,7 +38,7 @@ let questions = [
     },
     { 
         question: " Which function of Array object returns a new array comprised of this array joined with other array(s) and/or value(s)?", 
-        answer: [
+        answers: [
             ("push()"), 
             ("some()"), 
             ("content()"), 
@@ -85,9 +85,10 @@ document.querySelector(".quit").addEventListener("click", function(){
 })
 
 
-    document.querySelector(".refresh").addEventListener("click", function(){
-        console.log("Refresh Button pressed")
-    })
+document.querySelector(".refresh").addEventListener("click", function(){
+     console.log("Refresh Button pressed")
+
+})
 
 
 
