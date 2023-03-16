@@ -62,6 +62,7 @@ function goToNext() {
 function changeQuestion () {
      // change to first questions
      document.querySelector("#question-title").textContent = questions[currentQuestion].question;
+     document.querySelector('#choices').innerHTML = "";
 
      // populate choices
      for(i = 0; i < 4; i++) {
